@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PawMedic </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- <h1>PAWMEDIC</h1> -->
+        <img src="img/logo-pawMedic-putih.png" alt="logo">
+
+    </header>
+
+    <section class="form-section bd-container">
+        <h2 class="form-title">Formulir Penjadwalan Janji Temu dengan Dokter</h2>
+        <form id="appointmentForm">
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="doctor">Pilih Dokter:</label><br>
+            <select id="doctor" name="doctor" required>
+                <option value="">Pilih Dokter</option>
+                <option value="drsmith">Dr. Smith</option>
+                <option value="drjones">Dr. Jones</option>
+                <option value="drbrown">Dr. Brown</option>
+            </select><br>
+
+            <label for="date">Tanggal Janji Temu:</label><br>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Waktu Janji Temu:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <input type="submit" value="Jadwalkan Janji Temu">
+
+        </form>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>
